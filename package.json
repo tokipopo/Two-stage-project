@@ -1,0 +1,23 @@
+{
+  "name": "Two-stage-project",
+  "version": "1.0.0",
+  "description": "丝芙兰官网",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tokipopo/Two-stage-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tokipopo/Two-stage-project/issues"
+  },
+  "homepage": "https://github.com/tokipopo/Two-stage-project#readme",
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
+}
