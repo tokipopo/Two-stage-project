@@ -1,0 +1,10 @@
+
+.carousel{
+    width: 1190px;
+    height: 400px;
+    margin: 0 auto;
+}
+.carousel-indicators li{
+    width: 100px;
+    height: 4px;
+}
