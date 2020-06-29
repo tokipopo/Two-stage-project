@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SEPHORA</title>
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-
+    <script src="../../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../js/captcha.js"></script>
+    <script src="../js/md5.js"></script>
+    <script src="../js/register.js"></script>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/register.css" />
+  </head>
+  <body>
     <div class="box">
-        <!-- header -->
-    <div class="header">
+      <!-- header -->
+      <div class="header">
         <div class="container">
           <div class="header-logo">
             <img
@@ -19,12 +23,123 @@
               alt=""
             />
           </div>
+          <span>欢迎注册</span>
+          <div class="goSephoraLogin">
+            <p>已有账号？</p>
+            <ul>
+              <li><a href="./login.html">立即登录</a></li>
+              <li>></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- body -->
+      <div class="register-middle">
+        <div class="container">
+          <!-- 注册框 -->
+          <div class="register-main">
+            <div class="PhoneStepFirst">
+              <div class="coded">
+              <p>图形验证码</p>
+              <div class="SepBaseInput-chen" style="width: 300px;">
+                <input
+                  id="imageCode"
+                  type="text"
+                  placeholder=""
+                  value=""
+                  style="width: 298px;"
+                />
+              </div>
+              <canvas
+                class="validation-image"
+                id="captcha"
+                title="换一张"
+              ></canvas>
+              <div class="errorTip">
+                <div class="errorRedIcon"></div>
+                <span class="errorFont"></span>
+              </div>
+            </div>
+             <div class="user">
+              <p>用户名</p>
+              <div class="SepBaseInput-chen" style="width: 300px;">
+                <input
+                  id="usernameID"
+                  type="text"
+                  placeholder="请设置你的用户名"
+                  value=""
+                  style="width: 298px;"
+                />
+              </div>
+              <div class="errorTip">
+                <div class="errorRedIcon"></div>
+                <span class="errorFont"></span>
+              </div>
+            </div>
+            <div class="phone">
+              <p>手机号</p>
+              <div class="SepBaseInput-chen" style="width: 300px;">
+                <input
+                  id="phoneID"
+                  type="text"
+                  placeholder=""
+                  value=""
+                  style="width: 298px;"
+                />
+              </div>
+              <div class="errorTip">
+                <div class="errorRedIcon"></div>
+                <span class="errorFont"></span>
+              </div>
+            </div>
+            <div class="pwd">
+              <p>输入密码</p>
+              <div class="SepBaseInput-chen" style="width: 300px;">
+                <input
+                  id="passwordA"
+                  type="password"
+                  placeholder="8-16位大小写字母、数字的组合"
+                  value=""
+                  style="width: 298px;"
+                />
+              </div>
+              <div class="errorTip">
+                <div class="errorRedIcon"></div>
+                <span class="errorFont"></span>
+              </div>
+            </div>
+            <div class="pwds">
+              <p>确认密码</p>
+              <div class="SepBaseInput-chen" style="width: 300px;">
+                <input
+                  id="passwordB"
+                  type="password"
+                  placeholder="请再次输入密码"
+                  value=""
+                  style="width: 298px;"
+                />
+              </div>
+              <div class="errorTip">
+                <div class="errorRedIcon"></div>
+                <span class="errorFont"></span>
+              </div>
+            </div>
+              <div class="confirmButton2">注册</div>
+              <div class="readAndChange">
+                <input
+                  type="checkbox"
+                  class="userArgeeCheck"
+                  value="on"
+                  id="protocol"
+                />
+                <p>已阅读《丝芙兰用户服务协议》《丝芙兰隐私政策》</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-
-
-       <!-- footer -->
+      <!-- footer -->
       <div class="footer">
         <div class="container">
           <div class="footer-declaration-content">
@@ -85,8 +200,5 @@
         </div>
       </div>
     </div>
-    
-
-     
-</body>
+  </body>
 </html>

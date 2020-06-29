@@ -1,0 +1,148 @@
+/* header */
+.header span {
+  float: left;
+  display: block;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #333;
+  margin: 45px 0 0 30px;
+}
+.goSephoraLogin {
+    float: right;
+    margin-top: 30px;
+}
+.goSephoraLogin p {
+    float: left;
+    color: #9d9d9d;
+    font-size: 12px;
+}
+.goSephoraLogin ul {
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+}
+.goSephoraLogin ul li{
+    float: left;
+}
+.goSephoraLogin ul li:first-of-type {
+    color: #000;
+}
+
+
+/* 注册框 */
+.register-middle {
+  float: left;
+  width: 100%;
+  min-width: 1190px;
+  height: 804px;
+  background: transparent
+    url(https://ssl1.sephorastatic.cn/soa/pc/images/loginsSearchPassword_Bg.jpg)
+    no-repeat scroll 50% 0;
+}
+.register-main{
+    width: 730px;
+    float: left;
+    margin-left: 80px;
+    margin-top: 64px;
+}
+.register-main p{
+    font-size: 14px;
+    float: left;
+    width: 100px;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 10px;
+    text-align: center;
+}
+.SepBaseInput-chen {
+    float: left;
+    width: 300px;
+    height: 32px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.SepBaseInput-chen input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    text-indent: 20px;
+    width: 298px;
+    height: 30px;
+    outline: 0;
+}
+.borderb{
+    border-bottom: 1px solid #000;
+}
+.form-group-error{
+    border-bottom: 1px solid #f12526;
+}
+.errorFont{
+    color: #f12526;
+    font-size: 12px; 
+    float: left;
+    display: block;
+    margin-left: 5px;
+}
+
+.errorRedIcon{
+    display: none;
+    float: left;
+    margin: 5px 0 0;
+    width: 14px;
+    height: 14px;
+    background: url(https://ssl1.sephorastatic.cn/soa/pc/images/LoginIn-icon.png);
+    background-position: -38px -14px;
+}
+.erroron{
+    display: block;
+}
+.validation-image {
+    width: 120px;
+    height: 32px;
+    float: left;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.errorTip {
+    float: left;
+    width: 620px;
+    margin-left: 110px;
+    height: 34px;
+    line-height: 24px;
+}
+.confirmButton2 {
+    margin-left: 110px;
+    width: 300px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #999;
+    color: #fff;
+    float: left;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.readAndChange {
+    float: left;
+    margin-left: 110px;
+    width: 300px;
+    height: 30px;
+    line-height: 30px;
+    color: #9d9d9d;
+}
+.readAndChange>.userArgeeCheck {
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin: 7px 2px 0 0;
+}
+.PhoneStepFirst .readAndChange p {
+    float: left;
+    width: 280px;
+    font-size: 12px;
+    margin: 0;
+}
+
+
+

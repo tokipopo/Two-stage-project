@@ -11,6 +11,11 @@
     height: 89px;
 
 }
+.header-logo{
+    width: 250px;
+    height: 33px;
+    float: left;
+}
 .header-logo img{
     width: 250px;
     height: 33px;
@@ -63,8 +68,10 @@
 }
 
 
-
-
+/* container */
+.container{
+    width: 1190px;
+}
 
 
 
