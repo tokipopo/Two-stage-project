@@ -27,10 +27,19 @@ $(() => {
             dataType: "json",
             data: `username=${username}&password=${md5(password).slice(0,15)}`,
             success:function(data){
-                    console.log(data)
+                    // console.log(data)
                     if (data.status == "success") {
-                        alert(data.msg);
-                        location.href = "../html/";
+                        /* ..登录成功.. */
+                        /* (1) 要把用户的id和名字保存起来 */
+                        localStorage.setItem("user_id", data.data.id);
+                        localStorage.setItem("user_name", data.data.username); 
+                        if(document.referrer === 'http://127.0.0.1/code/sephora/Two-stage-project/src/client/html/index'){
+                            location.href ="./index.html";
+                        }else if(document.referrer === ''){
+                            location.href ="./index.html";
+                        }else{
+                            location.href = "./category.html"
+                        }
                     } else {
                         alert(data.msg);
                     }}
