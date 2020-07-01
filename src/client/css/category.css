@@ -62,7 +62,16 @@
     text-overflow: ellipsis;
     font-size: 12px;
 }
+.p-product a{
+    text-decoration: none;
+    color: #333;
+}
+.p-product a:hover{
+    color: #d1152a;;
+    cursor: pointer;
+}
 .p-discount{
     padding-bottom: 5px;
     font-size: 14px;
 }
+

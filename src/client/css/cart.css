@@ -1,0 +1,134 @@
+body{
+    background-color: #f5f5f5;
+}
+.checkheader{
+    min-width: 1190px;
+    position: relative;
+    z-index: 100;
+}
+.checkheader-info{
+    width: 100%;
+    background-color: #fff;
+    height: 120px;
+}
+.checkheader-info-content{
+    width: 1190px;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+.checkheader-info-logo{
+    width: 300px;
+    height: 40px;
+    float: left;
+}
+.checkheader-info-logo a{
+    margin: 5px 0;
+    height: 30px;
+}
+.checkheader-info-logo a img{
+    height: 30px;
+}
+.checkoutHeader-info-content-step{
+    width: 503px;
+    position: relative;
+    float: right;
+}
+
+.checkoutHeader-info-content-step .checkoutHeader-info-content-step-border {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #eee;
+    z-index: 1;
+}
+.checkoutHeader-info-content-step .checkoutHeader-info-content-step-wrap {
+    border-bottom: 3px solid #eee;
+    z-index: 10;
+    position: relative;
+    float: left;
+}
+.checkoutHeader-info-content-step .checkoutHeader-info-content-step-wrap.checkoutHeader-info-content-step-first {
+    width: 82px;
+    margin-right: 101px;
+}
+.checkoutHeader-info-content-step.first .checkoutHeader-info-content-step-first {
+    border-color: #000;
+}
+.sprite-checkout-header-step {
+    background-image: url(https://ssl1.sephorastatic.cn/soa/pc/images/checkout_header_step.png);
+    content: "";
+}
+.checkoutHeader-info-content-step-wrap.checkoutHeader-info-content-step-first em{
+    width: 82px;
+    height: 50px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: -145px 0;
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+.checkoutHeader-info-content-step-first em {
+    background-position: -22px 0;
+}
+.checkoutHeader-info-content-step-wrap.checkoutHeader-info-content-step-second {
+    width: 123px;
+    margin-right: 101px;
+}
+.checkoutHeader-info-content-step-wrap.checkoutHeader-info-content-step-second em{
+    width: 82px;
+    height: 50px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: -145px 0;
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+.checkoutHeader-info-content-step-wrap.checkoutHeader-info-content-step-second em {
+    width: 123px;
+    background-position: -124px -50px;
+}
+.checkoutHeader-info-content-step-wrap.checkoutHeader-info-content-step-third {
+    margin-right: 0;
+    width: 96px;
+}
+.checkoutHeader-info-content-step-wrap.checkoutHeader-info-content-step-third em {
+    width: 82px;
+    height: 50px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: -145px 0;
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+.checkoutHeader-info-content-step-wrap.checkoutHeader-info-content-step-third em {
+    width: 96px;
+    background-position: -138px -100px;
+}
+#CheckoutPublic {
+    clear: both;
+    min-width: 1190px;
+    margin-top: 50px;
+    position: relative;
+}
+#CheckoutAdPosition {
+    min-width: 1190px;
+    position: relative;
+}
+.checkoutAdPosition-info {
+    width: 100%;
+}
+.checkoutAdPosition-info-content {
+    width: 1190px;
+    margin: 0 auto;
+}
+.checkoutAdPosition-info-content .checkoutAdPosition-info-content-header {
+    height: 39px;
+    line-height: 39px;
+    text-indent: 20px;
+    font-size: 12px;
+    color: #333;
+    background-color: #fff;
+    border-bottom: 1px solid #f0f0f0;
+}
+
