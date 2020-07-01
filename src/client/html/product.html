@@ -16,7 +16,7 @@
   <body>
 
     <!-- 
-        列表页点击图片 或 标题 存入local p-good_id
+        列表页点击图片 或 标题 存入data_id 到local p-good_id
         根据p-good_id在goods数据库查询一样商品good_id的商品信息渲染详情页
         点击加入购物车 数据存入cart数据库
         js 商品id改为local的
@@ -24,6 +24,10 @@
         传val为num的值
      -->
     <div class="box">
+        <div id="page"></div>
+                  <script>
+                    $("#page").load("tops.html");
+                  </script>
       <div class="maincenter">
         <div class="p-container">
           <div class="crumbs">
