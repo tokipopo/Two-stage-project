@@ -104,11 +104,42 @@ body{
     padding-right: 5px;
 }
 /* banner */
+.carousel{
+    width: 1190px;
+    height: 400px;
+    margin: 0 auto;
+}
+.carousel-indicators li{
+    width: 100px;
+    height: 4px;
+}
+.carousel-indicators{
+    left: 240px;
+}
 .carousel-control-prev{
     left: 240px;
 }
 .carousel-fade{
     position: relative;
+}
+
+/* 小轮播图 */
+.brand-body-info{
+    height: 320px;
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.brand-body-left .carousel-indicators{
+    left: 0;
+}
+.brand-body-left .carousel-control-prev{
+    left: 0;
+}
+.brand-body-left .carousel{
+    width: 590px;
+    height: 320px;
+    margin: 0;
 }
 
 /* 移入再display：block */
@@ -166,11 +197,51 @@ body{
     bottom: -33px;
 }
 /* 左侧菜单 */
+.navm-menu-list{
+    width: 240px;
+    height: auto;
+    float: left;
+    background: #fff;
+    position: relative;
+}
 .navm-menu-list-col{
+    width: 240px;
+    min-height: 320px;
+    position: absolute;
+    z-index: 100;
     display: none;
+    height: 550px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
 }
 .navm-menu-list .indexon{
     display: block;
+}
+.navm-menu-list-col>li{
+    padding: 8px 0 9.7px 15px;
+    display: block;
+    background-color: #fff;
+    line-height: 20px;
+    border-bottom: 1px solid #f5f5f5;
+    position: relative;
+}
+.navm-menu-list-col>li>a{
+    color: #000;
+    line-height: 22px;
+    font-size: 14px;
+    margin-right: 10px;
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+}
+.navm-menu-list-col li ul li{
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+}
+.navm-menu-list-col li ul li a{
+    font-size: 12px;
+    color: #8a8a8a;
+    margin-right: 0;
 }
 
 
@@ -288,15 +359,77 @@ body{
 
 
 
-.carousel{
+.brand-wrap{
+    margin-top: 70px;
+    min-width: 1190px;
+}
+.brand-title{
+    height: 36px;
+    margin: 10px 0;
+    margin-bottom: 3px;
+}
+.brand-title-info{
     width: 1190px;
-    height: 400px;
+    margin: 0 auto;
+    height: 36px;
+    position: relative;
+}
+.brangbg{
+    background-image: url(https://ssl1.sephorastatic.cn/soa/pc/images/sprite_title_v2.png);
+}
+.brand-title-left{
+    float: left;
+    width: 387px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-position: -20px -13px;
+    background-size: 100%;
+}
+.brand-body-info-left{
+    float: left;
+}
+.brand-body-info-right{
+    float: left;
+    width: 600px;
+    display: block;
+    height: 320px;
+    background-color: tomato;
+}
+/* pick */
+.picks .brand-title-left{
+    background-position: -20px -47px;
+}
+.picks-info-content{
+    width: 1190px;
+    height: 310px;
     margin: 0 auto;
 }
-.carousel-indicators li{
-    width: 100px;
-    height: 4px;
+.picks-info-content-list {
+    width: 590px;
+    height: 300px;
+    display: inline-block;
+    background-color: rgb(67, 195, 204);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    position: relative;
 }
+.picks-info-content-list {
+    width: 590px;
+    height: 300px;
+    display: inline-block;
+    background-color: rgb(67, 195, 204);
+    margin-right: 5.57px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.picks-info-content .picks-info-content-list-double{
+    margin-right: 0;
+}
+.picks .brand-body-info{
+    height: 310px;
+}
+
+
 
 
 /* 右侧固定栏 */
@@ -336,6 +469,8 @@ body{
     background-image: url(https://ssl1.sephorastatic.cn/soa/pc/images/sprite_toolbar_new.png);
     background-position: 0 -40px;
 }
+
+
 
 
 
@@ -385,6 +520,10 @@ body{
     height: 50px;
     margin-top: 30px;
     background-color: brown;
+}
+.imgChange .picture img{
+    width: 50px;
+    height: 50px;
 }
 .product-info{
     float: left;
@@ -439,8 +578,9 @@ body{
 .price-info .price{
     color: #000;
     font-size: 24px;
-    margin-right: 10px;
     float: left;
+    margin-left: 40px;
+    line-height: 24px;
 }
 .activity {
     float: left;

@@ -62,6 +62,20 @@ $(() => {
       open("./cart.html");
   })
 
+//   存入商品id 
+  $(".cata-prod").on("click",".p_img a",function(){
+    console.log("aaa")
+    let good_id = $(this).parents(".list").attr("data-id");
+    localStorage.setItem("data_id", good_id);
+    open("./product.html");
+    })
+    $(".cata-prod").on("click",".p-product a",function(){
+        console.log("aaa")
+        let good_id = $(this).parents(".list").attr("data-id");
+        localStorage.setItem("data_id", good_id);
+        open("./product.html");
+    })
+
 
 
 

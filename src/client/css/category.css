@@ -10,8 +10,13 @@
     width: 238px;
     height: 320px;
     border: 1px solid transparent;
+    border-bottom: 1px solid rgba(0,0,0,0.03);
+    border-right:1px solid rgba(0,0,0,0.03) ;
 }
-.p-cont:hover{
+.cata-prod li:nth-child(5n) .p-cont{
+    border-right: none;
+}
+.shop-info .cata-prod .p-cont:hover{
     border: 1px solid black;
 }
 .p_img{
