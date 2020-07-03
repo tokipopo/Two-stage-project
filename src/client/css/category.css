@@ -1,6 +1,17 @@
+#page{
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.15);
+}
 .shop-info{
     width: 1190px;
     margin: 0 auto;
+}
+.shop-info:after{
+	content: "";
+	display: block;
+	clear: both;
+ 	height:0;
+	overflow:hidden;
+	visibility: hidden;
 }
 .cata-prod .list{
     float: left;
@@ -79,4 +90,21 @@
     padding-bottom: 5px;
     font-size: 14px;
 }
+.changpage{
+    width: 950px;
+    margin: 0 auto;
+    padding-left: 240px;
+}
+.sort li {
+    float: left;
+    width: 100px;
+    height: 35px;
+    text-align: center;
+}
 
+.sort .cur {
+    color: red;
+}
+.sortshop{
+    height: 100px;
+}

@@ -1,4 +1,6 @@
 $(()=>{
+
+    // 渲染列表部分
     $.getJSON("../../server/json/data-rea.json", 
         function (data) {
             let html = data.map(item =>{
@@ -18,4 +20,6 @@ $(()=>{
             $(".navm-menu-list-col").html(html);
         }
     );
+
+    
 })

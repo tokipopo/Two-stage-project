@@ -22,6 +22,7 @@ $(()=>{
   });
 
   //   点击立即购买
+  // 查询登录状况 登录就传商品id
 
   $(".cata-prod").on("click",".p-buy",function(){
     // console.log("aa")

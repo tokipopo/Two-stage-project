@@ -194,7 +194,7 @@ body{
 .search-info-content-shopping{
     position: absolute;
     right: 0;
-    bottom: -33px;
+    bottom: -29px;
 }
 /* 左侧菜单 */
 .navm-menu-list{
@@ -311,6 +311,7 @@ body{
     width: 100%;
     border: black;
     clear: both;
+    background-color: #000;
 }
 .footer .container {
     width: 100%;
@@ -433,6 +434,9 @@ body{
 
 
 /* 右侧固定栏 */
+.FixedRight{
+    position: relative;
+}
 .fixedtop-content{
     right: 104.5px;
     position: fixed;
@@ -500,7 +504,6 @@ body{
     float: left;
     width: 320px;
     height: 400px;
-    background-color: blue;
 }
 .imgOrVideo{
     float: left;
@@ -518,8 +521,7 @@ body{
     float: left;
     width: 320px;
     height: 50px;
-    margin-top: 30px;
-    background-color: brown;
+    /* margin-top: 30px; */
 }
 .imgChange .picture img{
     width: 50px;
@@ -529,7 +531,6 @@ body{
     float: left;
     width: 830px;
     margin-left: 40px;
-    background-color: cornflowerblue;
 }
 .product-info title{
     float: left;
@@ -575,11 +576,14 @@ body{
     font-size: 12px;
     float: left;
 }
+.price-info .monf{
+    margin-left: 40px;
+    float: left;
+}
 .price-info .price{
     color: #000;
     font-size: 24px;
     float: left;
-    margin-left: 40px;
     line-height: 24px;
 }
 .activity {
@@ -587,18 +591,35 @@ body{
     width: 830px;
     margin-top: 15px;
     border-bottom: 1px solid #ddd;
-    background-color: darkkhaki;
     position: relative;
 }
 .activity .mainList {
     float: left;
     margin-left: 40px;
     margin-bottom: 10px;
+    
 }
 .activity .mainList>li {
     width: 640px;
     margin-bottom: 10px;
     position: relative;
+}
+.activity .mainList>li .type {
+    color: #e00;
+    float: left;
+    height: 18px;
+    border: 1px solid #e00;
+    padding-left: 5px;
+    padding-right: 5px;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+.activity .mainList>li .main {
+    letter-spacing: 1px;
+    color: #474747;
+    margin-left: 50px;
+    line-height: 20px;
+    font-size: 12px;
 }
 .capacity {
     float: left;
@@ -642,14 +663,14 @@ body{
     float: left;
     width: 100%;
     margin-top: 20px;
-    background-color: cyan;
 }
 .p-num .num{
     float: left;
     width: 68px;
-    height: 39px;
+    height: 41px;
     margin: 0 20px 0 64px;
     border: 1px solid #ddd;
+    padding: 10px;
 }
 .fourButton {
     float: left;

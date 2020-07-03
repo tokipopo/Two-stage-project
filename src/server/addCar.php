@@ -10,7 +10,7 @@ $num = mysqli_num_rows($result);
 
 if($num == 0){
     $sql = "INSERT INTO cart " .
-    "(cart_id,user_id,,good_id,num)" .
+    "(cart_id,user_id,good_id,num)" .
     "VALUES " .
     "(NULL,$user_id,$good_id,1)";
 }elseif($num >= 1){
