@@ -40,7 +40,7 @@ $(() => {
                   <div class="carttitle">${item.title}</div>
                   <div class="shopcarinfo">${item.info}</div>
                 </td>
-                <td>${item.price}</td>
+                <td class="justo">${item.price}</td>
                 <td class="cartonenum">
                 <a href="javascript:;" class="reduce">-</a><input type="text" value=${item.num} class="sum"><a href="javascript:;" class="plus">+</a>
                 </td>
@@ -108,38 +108,116 @@ $(() => {
     // 计算选中总价
     let arrnum = 0;
     let arrnom=[];
+    let shoppnu;
     $(".shopbodyt").on("click",".onecheck",function(){
         let isOnecheck =$(this).is(":checked");
         let onemoney = $(this).parent().siblings(".oneallmoney").text()*1;
         // console.log(onemoney)
+        // $.ajax({
+        //     url: "../../server/getCart.php",
+        //     data: {user_id},
+        //     success: function (data2) {
+                
+        //         JSON.parse(data2).map(item =>{
+        //             shoppnu=item.num;
+        //         })
+        //         // console.log(data2)
+                
+        //     }
+        // });
         if(isOnecheck){
-            arrnom.push($(this).parent().siblings(".oneallmoney").text())
+            arrnom.push(onemoney)
+        }else{
+            arrnom.splice($.inArray(onemoney,arrnom),1)
+            console.log(arrnom)
         }
-        arrnum=eval(arrnom.join("+"))
+        if(arrnom.length>0){
+            arrnum=eval(arrnom.join("+")) 
+         }else{
+             arrnum=0;
+         }
+        
+        
         $(".checkoutSubmit-info-content-right-li-price").text(arrnum);
         $(".alfunck").text(arrnum);
         // console.log(isOnecheck,$(this).parent().siblings(".oneallmoney").text());
         // console.log(arrnum)
         // console.log(arrnom)
     })
+    
 
     /* 全选的功能：点击的时候切换选中的状态(改变自己的状态 + 改变所有其他复选框的状态) */
     $(".allcheck").click(function() {
+        let arrnom=[];
         // console.log(this, $(this).is(":checked"));
         let isAllcheck = $(this).is(":checked");
-        $(this).parents(".carttable").find(".onecheck").each(function(){
+         $(this).parents(".carttable").find(".onecheck").each(function(){
             // console.log(this)
             this.checked = isAllcheck;
             // $(this)
         })
+        if(isAllcheck){
+           
+        // console.log($(".shopbodyt").children().children(".oneallmoney"))
+        let msc=$(".shopbodyt").children().children(".oneallmoney");
+        // let sdff = $(msc[1]).text();
+        for(let i=0;i<msc.length;i++){
+            arrnom.push($(msc[i]).text())
+            // console.log(arrnom)
+        }
+        }else{
+            arrnum1=0;
+        }
+        if(arrnom.length>0){
+            arrnum1=eval(arrnom.join("+")) 
+         }else{
+             arrnum1=0;
+         }
+        // arrnum1=eval(arrnom.join("+"))
+        console.log(arrnum1)
+        $(".checkoutSubmit-info-content-right-li-price").text(arrnum1)
+
         
     })
-    // $(window).scroll(function(){
-    //     if(window.scrollTop<window.screenTop){
-    //         $(".checksubmit-info").addClass(className);
-    //     }
-        
-    // })
+    // 加减数量事件
+    
+    $(".shopbodyt").on("click",".reduce",function(){
+        let good_id = $(this).parent().parent().attr("datafc-id");
+        let justo=$(this).parent().siblings(".justo").text();
+        let orgnum= $(this).siblings(".sum").attr("value");
+        if(orgnum<2){
+            orgnum = 2;
+        }
+        orgnum--;
+        $.ajax({
+            url: "../../server/changeNum.php",
+            data: {user_id,good_id,orgnum},
+            success: function (data) {
+                
+            }
+        });
+
+
+        $(this).siblings(".sum").attr("value",orgnum);
+        $(this).parent().siblings(".oneallmoney").text(orgnum*justo);
+        // console.log(orgnum)
+    })
+    $(".shopbodyt").on("click",".plus",function(){
+        let good_id = $(this).parent().parent().attr("datafc-id");
+        let orgnum= $(this).siblings(".sum").attr("value");
+        let justo=$(this).parent().siblings(".justo").text();
+        orgnum++;
+        $.ajax({
+            url: "../../server/changeNum.php",
+            data: {user_id,good_id,orgnum},
+            success: function (data) {
+                
+            }
+        });
+        $(this).siblings(".sum").attr("value",orgnum);
+        $(this).parent().siblings(".oneallmoney").text(orgnum*justo);
+    })
+
     
         // window.onscroll = function () {
         //     var oLi = document.getElementById(oDom)

@@ -172,6 +172,16 @@ $(() => {
         getDataAndRenderUI($(".cur").data().sort, page)
     })
 
+    $(window).scroll(function () { 
+      let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      if(scrollTop >= 700){
+        $(".fixedtop-content").addClass("fixedtop-contentto");
+      }else{
+        $(".fixedtop-content").removeClass("fixedtop-contentto");
+      }
+      
+    });
+
 
 
 

@@ -13,6 +13,12 @@ body{
     background-color: #fff;
     height: 120px;
 }
+/* .checksubmit-info{
+              position: fixed;
+              bottom: 0;
+              z-index: 1000;
+              box-shadow: 0 0 8px 0 rgba(0,0,0,.1);
+          } */
 .checkheader-info-content{
     width: 1190px;
     margin: 0 auto;
@@ -171,6 +177,10 @@ body{
 }
 .allcheck,.onecheck{
     margin: 1px 8px 0 22px;
+}
+.checksubmit{
+    position: sticky;
+    bottom: 0;
 }
 .checksubmit-info{
     height: 60px;
