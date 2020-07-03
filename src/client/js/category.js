@@ -155,7 +155,7 @@ $(() => {
     })
 
     // 上一页和下一页的功能
-    console.log($("#prevPage,#nextPage"));
+    // console.log($("#prevPage,#nextPage"));
     $("#prevPage,#nextPage").click(function() {
         console.log("1")
         /* 设置选中状态 */

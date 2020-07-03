@@ -1,6 +1,8 @@
 body{
     background-color: #f5f5f5;
 }
+
+/* 导航 */
 .checkheader{
     min-width: 1190px;
     position: relative;
@@ -132,3 +134,169 @@ body{
     border-bottom: 1px solid #f0f0f0;
 }
 
+
+
+/* 购物车 */
+.cart-infos,.checksubmit{
+    margin-top: 40px;
+}
+.carttable{
+    font-size: 12px;
+}
+.carttable tr{
+    border-bottom: 1px solid #eee;
+}
+.shopbodyt tr{
+    height: 150px;
+}
+.carttable thead{
+    height: 47px;
+    line-height: 47px
+}
+.carttable thead tr th{
+    font-weight: normal;
+}
+.pimg{
+    width: 90px;
+}
+.carttitle{
+    font-weight: 700;
+    line-height: 12px;
+    margin-bottom: 10px;
+}
+.carttable,.checksubmit-info{
+    background-color: white;
+    width: 1190px;
+    margin: 0 auto;
+}
+.allcheck,.onecheck{
+    margin: 1px 8px 0 22px;
+}
+.checksubmit-info{
+    height: 60px;
+    font-size: 12px;
+}
+.checksubmit-infoleft{
+    float: left;
+    padding: 20px 0;
+}
+.checksubmit-infoleft .allcc{
+    margin-right: 30px;
+    display: inline-block;
+}
+.checkoutSubmit-info-content-left-content-split {
+    display: inline-block;
+    width: 1px;
+    height: 14px;
+    background-color: #ccc;
+    vertical-align: middle;
+}
+.checkoutSubmit-info-content-left-service {
+    background-color: #eee;
+    color: #000;
+    border-radius: 100px;
+    display: inline-block;
+    width: 130px;
+    height: 20px;
+    line-height: 20px;
+    text-indent: 8px;
+    position: relative;
+    margin-left: 30px;
+}
+.checkoutSubmit-info-content-left-service:after {
+    display: block;
+    content: "";
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    background: url(https://ssl1.sephorastatic.cn/soa/pc/images/checkout-submit-phone.png) no-repeat 100%;
+}
+.checksubmit-inforight{
+    float: right;
+    color: #858585;
+}
+.checkoutSubmit-info-content-right-ul {
+    height: 60px;
+    float: left;
+    line-height: normal;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+.checkoutSubmit-info-content-right-ul li:first-child {
+    padding-bottom: 4px;
+}
+.checkoutSubmit-info-content-right-li .ml20 {
+    margin-left: 10px;
+}
+.checkoutSubmit-info-content-right-li-price {
+    color: #000;
+    font-size: 14px;
+}
+.checkoutSubmit-info-content-right-li {
+    text-align: right;
+}
+.checkoutSubmit-info-content-right-li-total {
+    display: inline-block;
+}
+.checkoutSubmit-info-content-right-li-save {
+    display: inline-block;
+    margin-left: 20px;
+}
+.checkoutSubmit-info-content-right-li-save i {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+    vertical-align: bottom;
+    position: relative;
+    background: url(https://ssl1.sephorastatic.cn/soa/pc/images/checkout_first_minu.png) no-repeat;
+}
+.checkoutSubmit-info-content-right-submit {
+    width: 140px;
+    height: 60px;
+    background-color: #e00;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    float: left;
+    color: #fff;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.allcheckdelete{
+    margin-left: 88px;
+    margin-right: 30px;
+    display: inline-block;
+}
+
+.cartdelete{
+    width: 19px;
+    height: 19px;
+    display: block;
+    margin: 0;
+    cursor: pointer;
+    background: url(https://ssl1.sephorastatic.cn/soa/pc/images/checkout_icon.png) no-repeat 0 0;
+
+}
+.sum{
+    width: 37px;
+    height: 23px;
+    text-align: center;
+    border: none;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.cartonenum a{
+    height: 23px;
+    width: 23px;
+    border: 1px solid #eee;
+    display: inline-block;
+    line-height: 23px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}

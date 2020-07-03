@@ -24,7 +24,7 @@ $(()=>{
   //   点击立即购买
   // 查询登录状况 登录就传商品id
 
-  $(".cata-prod").on("click",".p-buy",function(){
+  $(".addCartButton").on("click",function(){
     // console.log("aa")
     let user_id = localStorage.getItem("user_id") || "";
     let user_name = localStorage.getItem("user_name") || "";

@@ -439,7 +439,7 @@ body{
 }
 .fixedtop-content{
     right: 104.5px;
-    position: fixed;
+    /* position: fixed; */
     z-index: 1000;
     bottom: 60px;
 }
@@ -472,6 +472,10 @@ body{
 .sprite_toolbar{
     background-image: url(https://ssl1.sephorastatic.cn/soa/pc/images/sprite_toolbar_new.png);
     background-position: 0 -40px;
+}
+
+.fixedtop-contento{
+    position: fixed;
 }
 
 

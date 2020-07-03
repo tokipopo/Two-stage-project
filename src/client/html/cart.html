@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SEPHORA</title>
-    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.css"/>
+    <link
+      rel="stylesheet"
+      href="../../../node_modules/bootstrap/dist/css/bootstrap.css"
+    />
     <script src="../../../node_modules/jquery/dist/jquery.js"></script>
     <script src="../../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="../js/carts.js"></script>
@@ -20,16 +23,29 @@
           <div class="top">
             <nav class="navbar navbar-expand-lg navbar-light bg-light1">
               <a class="navbar-brand" href="#">欢迎来到丝芙兰</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarText"
+                aria-controls="navbarText"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav mr-auto">
                   <li class="nav-item active">
-                    <a class="nav-link" href="#">用户名 <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#"
+                      ><span class="carusername">个人中心</span>
+                      <span class="sr-only">(current)</span></a
+                    >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">消息中心</a>
+                    <a class="nav-link" href="#"
+                      ><span class="userstatus">消息中心</span></a
+                    >
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">常见问题</a>
@@ -44,12 +60,12 @@
                 </span>
               </div>
             </nav>
-      </div>
+          </div>
           <!-- header -->
           <div class="checkheader">
             <div class="checkheader-info">
               <div class="checkheader-info-content">
-                <div class="checkheader-info-logo"> 
+                <div class="checkheader-info-logo">
                   <a href="/">
                     <img
                       src="https://ssl1.sephorastatic.cn/soa/pc/images/search_logo.png"
@@ -59,13 +75,19 @@
                 </div>
                 <div class="checkoutHeader-info-content-step floatR first">
                   <div class="checkoutHeader-info-content-step-border"></div>
-                  <div class="checkoutHeader-info-content-step-wrap checkoutHeader-info-content-step-first">
+                  <div
+                    class="checkoutHeader-info-content-step-wrap checkoutHeader-info-content-step-first"
+                  >
                     <em class="sprite-checkout-header-step"></em>
                   </div>
-                  <div class="checkoutHeader-info-content-step-wrap checkoutHeader-info-content-step-second">
+                  <div
+                    class="checkoutHeader-info-content-step-wrap checkoutHeader-info-content-step-second"
+                  >
                     <em class="sprite-checkout-header-step"></em>
                   </div>
-                  <div class="checkoutHeader-info-content-step-wrap checkoutHeader-info-content-step-third">
+                  <div
+                    class="checkoutHeader-info-content-step-wrap checkoutHeader-info-content-step-third"
+                  >
                     <em class="sprite-checkout-header-step"></em>
                   </div>
                 </div>
@@ -74,15 +96,71 @@
           </div>
 
           <!-- tip -->
-          <div id="CheckoutPublic"><div class="checkoutPublic-info"><div class="checkoutPublic-info-content"></div></div></div>
-          <div id="CheckoutAdPosition" style="margin-top: 10px;"><div class="checkoutAdPosition-info"><div class="checkoutAdPosition-info-content"><div class="checkoutAdPosition-info-content-header">您的购物车清单如含近效期产品，该近效期产品不支持7天无理由退货，近效期产品为页面有特别标示有效期信息的产品。</div></div></div></div>
-        
-        
-        
-        
-        
-        
-        
+          <div id="CheckoutPublic">
+            <div class="checkoutPublic-info">
+              <div class="checkoutPublic-info-content"></div>
+            </div>
+          </div>
+          <div id="CheckoutAdPosition" style="margin-top: 10px;">
+            <div class="checkoutAdPosition-info">
+              <div class="checkoutAdPosition-info-content">
+                <div class="checkoutAdPosition-info-content-header">
+                  您的购物车清单如含近效期产品，该近效期产品不支持7天无理由退货，近效期产品为页面有特别标示有效期信息的产品。
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-infos">
+            <table class="carttable">
+              <thead>
+                <tr>
+                  <th scope="col" style="width: 67.6px;">
+                    <input type="checkbox" name="全选" class="allcheck" />全选
+                  </th>
+                  <th scope="col" class="pimg"></th>
+                  <th scope="col">商品信息</th>
+                  <th scope="col">单价（元）</th>
+                  <th scope="col" style="text-indent: 24px;">数量</th>
+                  <th scope="col">小计（元）</th>
+                  <th scope="col">操作</th>
+                </tr>
+              </thead>
+              <tbody class="shopbodyt">
+                
+              </tbody>
+            </table>
+
+            <div class="checksubmit">
+              <div class="checksubmit-info">
+                <div class="checksubmit-infoleft">
+                  <a href="javascript:;" class="allcheckdelete">批量删除</a>
+                  <div class="checkoutSubmit-info-content-left-content-split checkoutSubmit-info-content-left-content-l"></div>
+                  <a href="javascript:;" class="checkoutSubmit-info-content-left-service">联系客服</a>
+                </div>
+                <div class="checksubmit-inforight">
+                  <ul class="checkoutSubmit-info-content-right-ul">
+                    <li class="checkoutSubmit-info-content-right-li">
+                      <span class="">已选<em>0</em>件商品</span>
+                      <span class="ml20">合计 :</span>
+                      <span class="checkoutSubmit-info-content-right-li-price">¥0.00</span>
+                    </li>
+                    <li class="checkoutSubmit-info-content-right-li">
+                      <div class="checkoutSubmit-info-content-right-li-total">
+                        <span class="checkoutSubmit-info-content-right-li-total-key">商品总额：</span>
+                        <span class="checkoutSubmit-info-content-right-li-gift-value alfunck">0.00</span>
+                      </div>
+                      <div class="checkoutSubmit-info-content-right-li-save">
+                        <i></i><span class="checkoutSubmit-info-content-right-li-save-key">共节省：</span>
+                        <span class="checkoutSubmit-info-content-right-li-gift-value">¥0.00</span>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="checkoutSubmit-info-content-right-submit" style="background-color: rgb(238, 0, 0);">立即结算</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
