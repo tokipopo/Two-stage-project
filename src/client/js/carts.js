@@ -112,19 +112,6 @@ $(() => {
     $(".shopbodyt").on("click",".onecheck",function(){
         let isOnecheck =$(this).is(":checked");
         let onemoney = $(this).parent().siblings(".oneallmoney").text()*1;
-        // console.log(onemoney)
-        // $.ajax({
-        //     url: "../../server/getCart.php",
-        //     data: {user_id},
-        //     success: function (data2) {
-                
-        //         JSON.parse(data2).map(item =>{
-        //             shoppnu=item.num;
-        //         })
-        //         // console.log(data2)
-                
-        //     }
-        // });
         if(isOnecheck){
             arrnom.push(onemoney)
         }else{
@@ -218,18 +205,6 @@ $(() => {
         $(this).parent().siblings(".oneallmoney").text(orgnum*justo);
     })
 
-    
-        // window.onscroll = function () {
-        //     var oLi = document.getElementById(oDom)
-        //     var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-        //     if (scrollTop >= 200) {
-        //         oLi.style.display = "flex"
-        //     }
-        //     else {
-        //         oLi.style.display = "none"
-        //     }
-        //     // console.log(scrollTop)
-        // }
     
 
     

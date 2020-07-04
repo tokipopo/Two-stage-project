@@ -20,7 +20,61 @@
                   <script>
                     $("#page").load("tops.html");
                   </script>
-                  <div class="sortshop">
+                  <div class="breadcrumb1"><ul class="brandcrumb_ul"><li><a href="https://www.sephora.cn" class="linkToindex">首页</a></li><li class="right_arrow">&gt;</li><li class="cate_cont"><h1>护肤</h1></li><li class="right_arrow">&gt;</li><li class="cate_cont"><h1>面部护理</h1></li><li class="right_arrow">&gt;</li><li class="cate_cont"><h1>面部精华</h1></li><li><div class="brand_chosen"></div></ul>
+                  </div>
+                  <table class="table" style="width: 1190px; font-size: 14px; border-bottom: 1px solid #aaaaaa;">
+                    <thead >
+                        <th scope="col" style="border-bottom: none;">适用人群</th>
+                        <td scope="col">女士</td>
+                        <td scope="col">男士</td>
+                        <td scope="col">通用</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">适用部位</th>
+                        <td>面部</td>
+                        <td>眼部</td>
+                        <td>身体</td>
+                        <td>T区</td>
+                        <td>颈部</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">功效</th>
+                        <td>保湿</td>
+                        <td>补水</td>
+                        <td>清洁</td>
+                        <td>提亮肤色</td>
+                        <td>细致毛孔</td>
+                        <td>淡化细纹</td>
+                        <td>提拉紧致</td>
+                        <td>抗氧化</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">价格</th>
+                        <td>0-100元</td>
+                        <td>101-300元</td>
+                        <td>301-600元</td>
+                        <td>601-900元</td>
+                        <td>901元以上</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+                  
+                  
+                    <div class="sortshop">
                     <ul class="sort">
                       <li class="cur" data-sort="default">默认排序</li>
                       <li data-sort="price_asc">价格▲</li>
@@ -49,29 +103,15 @@
                       </li>
                   </ul>
               </nav>
-                </div>
+                </div>fi
                 
 
                 <!-- 固定栏 -->
-                <div id="FixedRight">
-                  <div class="fixedtop-info">
-                    <div class="fixedtop-content">
-                      <ul>
-                        <li><a href=""></a></li>
-                        <li class="cart">
-                          <a href="" target="">
-                            <em class="toolbar_text">购物车</em>
-                            <em class="sprite_toolbar"></em>
-                            <!-- <div class="numCircle">3</div> -->
-                          </a>
-                        </li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+                <div id="fixed"></div>
+                  <script>
+                    $("#fixed").load("fixed.html");
+                  </script>
+                
     </div>
 </body>
 </html>
