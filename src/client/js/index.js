@@ -98,8 +98,9 @@ $(()=>{
         
       });
     //   回到顶部
-    $(".backTop").click(function(){
+    $(".backTop a").click(function(){
         $("html,body").animate({scrollTop:0},300);
+        // console.log("11")
         return false;
     })
 
